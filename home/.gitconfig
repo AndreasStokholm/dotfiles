@@ -1,27 +1,12 @@
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lg = log --oneline --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	s = status -s
-	st = status
-	co = checkout
-	ci = commit
-	rb = rebase
 [color]
-	ui = true
+        ui = true
 [user]
-	name = Tobias Berg
-	email = "tb@tobiasberg.net"
-[credential]
-	helper = osxkeychain
+        name = Andreas Stokholm
+        email = "andreas@stokholm.me"
+[credentials]
+        helper = osxkeychain
 [core]
-	editor = vim
-	excludesfile = /Users/tobias/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[push]
-	default = simple
-[merge]
-	ff = false
+        editor = vim

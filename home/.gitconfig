@@ -6,7 +6,7 @@
 [user]
         name = Andreas Stokholm
         email = "andreas@stokholm.me"
-[credentials]
+[credential]
         helper = osxkeychain
 [core]
         editor = vim
